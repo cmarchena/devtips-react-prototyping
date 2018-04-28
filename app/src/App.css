@@ -1,0 +1,24 @@
+body {
+  background-color: #414141;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playlist {
+  width: 100%;
+}
+
+@media screen and (min-width: 425px) {
+  body {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .playlist {
+    width: 40%;
+  }
+  .aggregate {
+    display: inline-block;
+  }
+}
