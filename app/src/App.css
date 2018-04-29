@@ -1,0 +1,21 @@
+body {
+  background-color: #414141;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.playlist {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 425px) {
+  body {
+    flex-direction: row;
+  }
+}
