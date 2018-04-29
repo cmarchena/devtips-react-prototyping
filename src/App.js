@@ -237,7 +237,11 @@ class App extends Component {
                 backgroundColor: 'green',
                 borderRadius: '10px'
               }}
-              onClick={() => (window.location = 'http://localhost:8888/login/')}
+              onClick={() => {
+                window.location = window.location.href.includes('localhost')
+                  ? 'http://localhost:8888/login'
+                  : 'http://devtips-backend.herokuapp.com/login';
+              }}
             >
               Haz login con tu cuenta de Spotify
             </button>
