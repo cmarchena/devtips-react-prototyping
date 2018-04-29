@@ -5,6 +5,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+#root {
+  width: 100%;
+}
 .playlist {
   width: 100%;
 }
@@ -14,8 +17,15 @@ ul {
   padding-left: 0;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
   body {
+    width: 100%;
     flex-direction: row;
+  }
+  .playlist {
+    width: 33%;
+  }
+  .aggregate {
+    display: inline-block;
   }
 }
